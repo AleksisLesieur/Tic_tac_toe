@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="Players">
+        <span class="firstPlayer">Aleksis</span>
+        <span class="VS">vs</span>
+        <span class="secondPlayer">Mkicas</span>
+    </div>
+    <div class="scores">
+        <span class="firstScore">0</span>
+        <span class="separating scores">:</span>
+        <span class="secondScore">0</span>
+    </div>
+
+    <div class="button">
+        <button class="new">NEW GAME</button>
+    </div>
+
+    <div class="board">
+        <div class="box bottom right topLeft">
+            <svg width="300" height="300">
+                <line path class="path hidden1" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15"></line>
+                <line path class="path2 hidden2" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden3" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+        <div class="box bottom right topCenter">
+            <svg width="300" height="300">
+                <line path class="path hidden4" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15"></line>
+                <line path class="path2 hidden5" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden6" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+        <div class="box bottom topRight">
+            <svg width="300" height="300">
+                <line path class="path hidden7" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15"></line>
+                <line path class="path2 hidden8" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden9" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+        <div class="box bottom right middleLeft">
+            <svg width="300" height="300">
+                <line path class="path hidden10" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15">
+                </line>
+                <line path class="path2 hidden11" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden12" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+        <div class="box bottom right middleCenter">
+            <svg width="300" height="300">
+                <line path class="path hidden13" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15">
+                </line>
+                <line path class="path2 hidden14" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden15" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+        <div class="box bottom middleRight">
+            <svg width="300" height="300">
+                <line path class="path hidden16" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15">
+                </line>
+                <line path class="path2 hidden17" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden18" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+        <div class="box right bottomLeft">
+            <svg width="300" height="300">
+                <line path class="path hidden19" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15">
+                </line>
+                <line path class="path2 hidden20" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden21" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+        <div class="box right bottomCenter">
+            <svg width="300" height="300">
+                <line path class="path hidden22" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15">
+                </line>
+                <line path class="path2 hidden23" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden24" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+        <div class="box bottomRight">
+            <svg width="300" height="300">
+                <line path class="path hidden25" x1="20" y1="20" x2="280" y2="280" stroke="red" stroke-width="15">
+                </line>
+                <line path class="path2 hidden26" x1="20" y1="280" x2="280" y2="20" stroke="red" stroke-width="15">
+                </line>
+                <circle id="my-circle" class="fill path3 hidden27" cx="150" cy="150" r="130" fill="none" stroke="green"
+                    stroke-width="15" stroke-dasharray="900" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="button">
+        <button class="refresh"><a href="">REFRESH GAME</a></button>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
