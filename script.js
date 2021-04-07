@@ -7,8 +7,13 @@ const secondPlayer = document.querySelector('.secondPlayer')
 
 let firstPlayerName = prompt("what is the first player's name?")
 let secondPlayerName = prompt("what is the second player's name?")
-
+while (firstPlayerName === null) {
+    firstPlayerName = prompt("1st field can't be empty!");
+}
 firstPlayer.textContent = firstPlayerName;
+while (secondPlayerName === null) {
+    secondPlayerName = prompt("2nd field can't be empty!");
+}
 secondPlayer.textContent = secondPlayerName;
 
 let firstScore = document.querySelector('.firstScore')
@@ -63,12 +68,6 @@ const hidden25 = document.querySelector('.hidden25');
 const hidden26 = document.querySelector('.hidden26');
 const hidden27 = document.querySelector('.hidden27');
 
-// cleaning up the top part of the code
-
-// for (i = 1; i < 28; i++) {
-//     `const hiddeen${i} = document.querySelector('.hidden${i}')`
-// }
-
 // declaring variables so that you can't double click on a box
 
 let topLeftClicked = true;
@@ -107,7 +106,7 @@ let oLetter7 = false;
 let oLetter8 = false;
 let oLetter9 = false;
 
-//testing a couple things out
+//Making the game work
 
 topLeft.addEventListener('click', function () {
 
@@ -417,11 +416,7 @@ bottomRight.addEventListener('click', function () {
     }
 });
 
-// let xLettertopLeft;
-// let xLettertopCenter;
-// let xLettertopRight;
-
-// let elena = 15;
+//Making sure that the game would stop once a player has won
 
 function xletterwon() {
     if (xLetter1 === true && xLetter2 === true && xLetter3 === true ||
@@ -467,10 +462,9 @@ function oletterwon() {
     }
 }
 
-//buttons that gives a new game and refresh the whole game
+//buttons that declares a new game
 
 const newGame = document.querySelector('.new');
-const refresh = document.querySelector('.refresh');
 
 newGame.addEventListener('click', function () {
     hidden1.classList.add('hidden1');
