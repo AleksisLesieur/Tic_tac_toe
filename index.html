@@ -10,17 +10,18 @@
 </head>
 
 <body>
-    <div class="Players">
-        <span class="firstPlayer">?</span>
-        <span class="VS">vs</span>
-        <span class="secondPlayer">?</span>
+    <div class="flexbox">
+        <div class="Players">
+            <div class="firstPlayer">?</div>
+            <div class="VS">vs</div>
+            <div class="secondPlayer">?</div>
+        </div>
+        <div class="scores">
+            <div class="firstScore">0</div>
+            <div class="separating scores">:</div>
+            <div class="secondScore">0</div>
+        </div>
     </div>
-    <div class="scores">
-        <span class="firstScore">0</span>
-        <span class="separating scores">:</span>
-        <span class="secondScore">0</span>
-    </div>
-
     <div class="button">
         <button class="new">NEW GAME</button>
     </div>
@@ -116,7 +117,7 @@
     </div>
 
     <div class="button">
-        <button class="refresh"><a href="">REFRESH GAME</a></button>
+        <button class="refresh"><a href="">REFRESH</a></button>
     </div>
 
     <script src="script.js"></script>

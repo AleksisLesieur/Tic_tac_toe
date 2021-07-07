@@ -1,214 +1,249 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 100vw;
+}
 .Players {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    background-position: contain;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-position: contain;
 }
 .firstPlayer {
-    font-size: 100px;
-    color: red;
-    margin-right: 10px;
-    width: 40%;
-    text-align: right;
+  font-size: 100px;
+  color: red;
+  width: 40%;
+  text-align: right;
 }
 .VS {
-    font-size: 100px;
-    width: 5%;
-    text-align: center;
+  font-size: 100px;
+  text-align: center;
+  width: 10%;
 }
 .secondPlayer {
-    font-size: 100px;
-    color: green;
-    margin-left: 10px;
-    width: 40%;
+  font-size: 100px;
+  color: green;
+  width: 40%;
 }
 
 a:link {
-    text-decoration: none;
-    color: black;
-  }
-  
-  a:visited {
-    text-decoration: none;
-    color: black;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: black;
-  }
-  
-  a:active {
-    text-decoration: none;
-    color: black;
-  }
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
 
 .new {
-    font-weight: 100;
-    font-size: 50px;
-    height: 100px;
-    width: 300px;
-    margin-bottom: 70px;
+  font-weight: 100;
+  font-size: 50px;
+  height: 100px;
+  width: 300px;
+  margin-bottom: 70px;
 }
 .refresh {
-    font-weight: 100;
-    font-size: 50px;
-    height: 100px;
-    width: 500px;
-    margin-top: 50px;
+  font-weight: 100;
+  font-size: 50px;
+  height: 100px;
+  width: 500px;
+  margin-top: 50px;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .refresh {
-    text-underline-offset: none;
+  text-underline-offset: none;
 }
 
 .scores {
-    width: 200px;
-    margin: auto;
-    margin-bottom: 20px;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
 }
 .firstScore {
-    color: red
+  color: red;
 }
 .secondScore {
-    color: green;
+  color: green;
 }
 
 .board {
-    height: 909px;
-    width: 909px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+  height: 909px;
+  width: 909px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .box {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
 }
 .bottom {
-    border-bottom: 3px solid black;
+  border-bottom: 3px solid black;
 }
 .right {
-    border-right: 3px solid black;
+  border-right: 3px solid black;
 }
 
 .hidden1 {
-    display: none;
+  display: none;
 }
 .hidden2 {
-    display: none;
+  display: none;
 }
 .hidden3 {
-    display: none;
+  display: none;
 }
 .hidden4 {
-    display: none;
+  display: none;
 }
 .hidden5 {
-    display: none;
+  display: none;
 }
 .hidden6 {
-    display: none;
+  display: none;
 }
 .hidden7 {
-    display: none;
+  display: none;
 }
 .hidden8 {
-    display: none;
+  display: none;
 }
 .hidden9 {
-    display: none;
+  display: none;
 }
 .hidden10 {
-    display: none;
+  display: none;
 }
 .hidden11 {
-    display: none;
+  display: none;
 }
 .hidden12 {
-    display: none;
+  display: none;
 }
 .hidden13 {
-    display: none;
+  display: none;
 }
 .hidden14 {
-    display: none;
+  display: none;
 }
 .hidden15 {
-    display: none;
+  display: none;
 }
 .hidden16 {
-    display: none;
+  display: none;
 }
 .hidden17 {
-    display: none;
+  display: none;
 }
 .hidden18 {
-    display: none;
+  display: none;
 }
 .hidden19 {
-    display: none;
+  display: none;
 }
 .hidden20 {
-    display: none;
+  display: none;
 }
 .hidden21 {
-    display: none;
+  display: none;
 }
 .hidden22 {
-    display: none;
+  display: none;
 }
 .hidden23 {
-    display: none;
+  display: none;
 }
 .hidden24 {
-    display: none;
+  display: none;
 }
 .hidden25 {
-    display: none;
+  display: none;
 }
 .hidden26 {
-    display: none;
+  display: none;
 }
 .hidden27 {
-    display: none;
+  display: none;
 }
 
 /* svg begins */
 
-
 .path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 1s linear forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1s linear forwards;
 }
 
 .path2 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 1s linear forwards;
-    animation-delay: 0.5s;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1s linear forwards;
+  animation-delay: 0.5s;
 }
 
 .path3 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 1s linear forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1s linear forwards;
 }
 
 @keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* svg ends */
+
+/* * {
+  outline: 1px solid blue;
+} */
+
+/* mobile responsiveness begins here */
+
+@media only screen and (max-width: 1582px) {
+  body {
+    width: 909px;
+  }
+  .flexbox {
+    float: top;
+  }
+  .Players {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .firstPlayer {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .VS {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .secondPlayer {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
